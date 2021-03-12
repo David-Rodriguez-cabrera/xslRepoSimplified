@@ -2,8 +2,9 @@
 <xsl:output method="text"/>
 <xsl:template match="/">
     <xsl:for-each select="root/record">
-    <xsl:value-of select="titulo"/>,<xsl:value-of select="fecha/@when"/>
-        <xsl:text>&#xA;</xsl:text>
+    <xsl:text>&#xA;</xsl:text>
+    <xsl:value-of select="titulo"/> <xsl:text>&#32;</xsl:text> <xsl:value-of select="fecha/@when"/>
+        
     </xsl:for-each>
 </xsl:template>
 </xsl:stylesheet>
